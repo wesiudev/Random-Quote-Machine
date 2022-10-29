@@ -13,23 +13,3 @@ code {
     monospace;
 }
 
-button{
-  width:150px;
-  height:40px;
-  border:1px solid rgb(102, 96, 182);
-  background-color: rgb(125, 107, 228);
-  margin-top: 30px;
-  color:white;
-}
-#quote-box{
-  width:30vw;
-  padding:50px;
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  margin: auto;
-  text-align: center;
-  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-  border-radius: 15px;
-}

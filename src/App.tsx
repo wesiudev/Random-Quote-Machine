@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
 type Quote = {
   text: string;
   author: string;
@@ -45,11 +44,13 @@ export default function App () {
   return (
     <div className="app">
       <div id="quote-box">
-          <div id="text">{quoteSelected.text}</div>
-          <div id="author">{quoteSelected.author ? quoteSelected.author : "Anonymous author"}</div>
+        <div className='quote-wrapper'>
+          <div id="text">"{quoteSelected.text}"</div>
+          <div id="author">{quoteSelected.author ? `Author: ${quoteSelected.author}` : "Anonymous author"}</div>
+          </div>
           <div id="new-quote"></div>
-          <a href="https://www.twitter.com/intent/tweet" target="_blank" id="tweet-quote">tweet</a>
           <button onClick={setRandomQuote}>Get a quote</button>
+          <a href="https://www.twitter.com/intent/tweet" target="_blank" id="tweet-quote">Tweet</a>
       </div>
     </div>
   );

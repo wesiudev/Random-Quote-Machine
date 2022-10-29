@@ -30,7 +30,78 @@
 .App-link {
   color: #61dafb;
 }
-
+button{
+  width:150px;
+  height:40px;
+  border:1px solid rgb(102, 96, 182);
+  background-color: rgb(125, 107, 228);
+  color:white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(139, 124, 223);
+}
+#quote-box{
+  width:400px;
+  height:200px;
+  padding:50px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 15px;
+  position: relative;
+  @media screen and (max-width:766px) {
+    width: 80vw;
+  }
+}
+#quote-box::before{
+  content: 'Quote Machine';
+  position: absolute;
+  font-size: 22px;
+  left:10px;
+  color:rgb(78, 78, 78);
+  top:10px;
+  font-family:'Times New Roman', Times, serif;
+}
+#tweet-quote{
+  width:150px;
+  height:40px;
+  border:1px solid rgb(29, 138, 240);
+  background-color: rgb(81, 154, 250);
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+#tweet-quote:hover{
+  background-color: rgb(115, 173, 248);
+}
+#tweet-quote::before{
+  content:'';
+  height:20px;
+  width:20px;
+  position: absolute;
+  left:32px;
+  top:13px;
+  background-image: url('./twitter.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.quote-wrapper{
+  height:50px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
